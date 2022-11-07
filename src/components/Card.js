@@ -1,35 +1,38 @@
 import React from "react";
-import book from "./images/book.png";
+import { useState } from "react";
+import BookDetails from "./BookDetails";
 
-
-const Card = ({book}) =>{
-    console.log(book)
-    return(
-        <>
-
-        {
-            book.map((item) =>{
-                let thumbnail=item.volumeInfo.imageLinks.smallThumbnail;
-                return(
-                    <>
-                    <div className="card ">
-            <img src={thumbnail} alt= "" />
-            <div className="bottom">
+const Card = ({ book }) => {
+  const [show, setShow] = useState(false);
+  const [bookItem, setItem] = useState();
+  return (
+    <>
+      {book.map((item) => {
+        let thumbnail = item.volumeInfo.imageLinks.smallThumbnail;
+        return (
+          <>
+            <div
+              className="card"
+              onClick={() => {
+                setShow(true);
+                setItem(item);
+              }}
+            >
+              <img src={thumbnail} alt="" />
+              <div className="bottom">
                 <h3 className="title">{item.volumeInfo.title}</h3>
-                
+              </div>
             </div>
-        </div>
-
-        </>
-                )
-            })
-            
-
-        }
-        
-        
-        </>
-    )
-}
+            <BookDetails
+              show={show}
+              item={bookItem}
+              onClose={() => setShow(false)}
+            />
+          </>
+        );
+      })}
+    </>
+  );
+};
 
 export default Card;
