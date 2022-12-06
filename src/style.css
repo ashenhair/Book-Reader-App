@@ -3,89 +3,100 @@
 
 .App {
     text-align: center;
-  }
-
+  }  
 
 .search button {
     cursor:pointer;
     background-color:#fff;
-    color:#669;    
+    color:#669;
+      
   }
 
   .row2{
     color: #555;
     display: flex;
-    padding: 2px;
+    justify-content: flex-end;
+    padding: 2px;  
     border: 1px solid currentColor;
     border-radius: 5px;
     position: absolute;
     top:20px;
-    right: 60px;
+    right: 120px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    
+   
+
+background: rgba(255, 255, 255, 0.12);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+border: 2px solid rgba(255, 255, 255, 0.3);
 } 
 
-    input[type="search"] {
-    border: none;
-    background: transparent;
-    margin: 0;
-    padding: 7px 8px;
-    font-size: 14px;
-    color: inherit;
-    border: 1px solid transparent;
-    border-radius: inherit;
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  color: #fff;
 }
 
-    input[type="search"]::placeholder {
-    color: #bbb;
+input[type="search"]::placeholder {
+  color: rgb(232, 227, 227);
   
 }
 
-    button[type="submit"] {
-    text-indent: -999px;
-    overflow: hidden;
-    width: 40px;
-    padding: 0;
-    margin: 0;
-    border: 1px solid transparent;
-    border-radius: inherit;
-    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
-    cursor: pointer;
-    opacity: 0.7;
-}
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
 
-    button[type="submit"]:hover {
-    opacity: 1;
-}
-
-    button[type="submit"]:focus,
-    input[type="search"]:focus {
   
-    outline: none;
 }
+
+button[type="submit"]:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  
+  outline: none;
+}
+
+
 
 .card{
     
     border-radius: 1rem;
     padding: 0.5rem;
     margin-bottom: 10px;
-    box-shadow: 0 5px 5px rgba(240, 20, 71, 0.727);
+    box-shadow: 0 5px 5px rgba(225, 133, 155, 0.727);
     transition: .5s;
     text-align: center;
     position: relative;
-
-    background: rgba(210, 14, 14, 0.2);
+    background: rgba(178, 166, 149, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(14.7px);
+    -webkit-backdrop-filter: blur(14.7px);
     border: 1px solid rgba(213, 5, 5, 0.3);
-   
+
 }
 
 .card:hover{
@@ -118,10 +129,10 @@
 }
 
 .card .title{
+  
   border-radius:  0.5rem 0.5rem;
   padding: 5px;
- 
-  color:rgb(201, 18, 18);
+  color:rgb(224, 102, 8);
   position: relative;
   
   
@@ -217,4 +228,6 @@
     font-size: 13px;
     
 }
+
+
 
