@@ -26,10 +26,8 @@ const SearchBox = () => {
 
                 </div>
 
-                
 
             
-
             <div className="container">
                 {
                     <Card book={bookData}/>
