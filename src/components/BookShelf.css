@@ -20,7 +20,6 @@
 
 }
 
-
 .bookshelf img{
     width: 80%;
     height: 200px;
@@ -31,7 +30,6 @@
 .bookshelf_bottom{
     display: flex;
     flex-direction: column;
-
     
 }
 
